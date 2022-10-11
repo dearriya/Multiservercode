@@ -6,6 +6,6 @@
     expect_snapshot(check)
     expect_equal(dim(check), c(100, 4))
     expect_error(with(bank, Multiserver(arrival_time, service_time, -2)))
-    expect_false(tibble::is_tibble(check))
+    expect_true(tibble::is_tibble(check))
   })
 
