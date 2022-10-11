@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Multiserver
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Multiserver is to simulate customer queuing system on a first come, first serve basis.
+
+## Installation
+
+You can install the development version of Multiserver from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("dearriya/Multiservercode")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Multiservercode)
+data(bank)
+with(bank, Multiserver(arrival_time, service_time, 3))
+```
+
+## Exercise 3 Marking Criteria
+
+```{r Exercise 3 Marking Criteria}
+#' I have completed all parts of this exercise:
+#' Create an R package with all the appropriate documentation.
+#' Add the bank data set to your package.
+#' Implement testthat with at least 2 expectations.
+#' Used Git & Github appropriately with at least 2 commits together with an appropriate readme file.
+#' Currently we used data.frame() on line 34 in Multiserver(). Change that to tibble() and update the package accordingly.
+```
+
+```
+
+```
+
+
+
